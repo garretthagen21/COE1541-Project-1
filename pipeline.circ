@@ -4463,21 +4463,13 @@ be67 b067 e054 7000 c259 6c1 170a f600
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <wire from="(840,280)" to="(840,300)"/>
-    <wire from="(620,430)" to="(630,430)"/>
     <wire from="(210,300)" to="(360,300)"/>
-    <wire from="(210,440)" to="(420,440)"/>
-    <wire from="(500,410)" to="(570,410)"/>
     <wire from="(210,390)" to="(420,390)"/>
     <wire from="(840,330)" to="(840,340)"/>
-    <wire from="(630,400)" to="(630,430)"/>
-    <wire from="(630,320)" to="(630,360)"/>
     <wire from="(840,280)" to="(960,280)"/>
     <wire from="(360,310)" to="(390,310)"/>
-    <wire from="(380,460)" to="(420,460)"/>
-    <wire from="(460,380)" to="(500,380)"/>
-    <wire from="(630,360)" to="(660,360)"/>
-    <wire from="(460,450)" to="(510,450)"/>
-    <wire from="(630,400)" to="(660,400)"/>
+    <wire from="(460,380)" to="(650,380)"/>
+    <wire from="(710,300)" to="(710,360)"/>
     <wire from="(360,330)" to="(420,330)"/>
     <wire from="(390,310)" to="(390,370)"/>
     <wire from="(390,370)" to="(420,370)"/>
@@ -4485,24 +4477,18 @@ be67 b067 e054 7000 c259 6c1 170a f600
     <wire from="(360,330)" to="(360,340)"/>
     <wire from="(800,280)" to="(840,280)"/>
     <wire from="(210,340)" to="(360,340)"/>
-    <wire from="(710,300)" to="(710,380)"/>
     <wire from="(360,300)" to="(360,310)"/>
+    <wire from="(630,320)" to="(630,340)"/>
     <wire from="(840,380)" to="(960,380)"/>
+    <wire from="(630,340)" to="(650,340)"/>
     <wire from="(840,340)" to="(840,380)"/>
     <wire from="(460,320)" to="(630,320)"/>
-    <wire from="(500,380)" to="(500,410)"/>
+    <wire from="(700,360)" to="(710,360)"/>
     <wire from="(710,300)" to="(750,300)"/>
     <wire from="(210,260)" to="(750,260)"/>
-    <wire from="(540,450)" to="(570,450)"/>
     <wire from="(390,310)" to="(420,310)"/>
     <comp lib="3" loc="(460,320)" name="Comparator">
       <a name="width" val="3"/>
-    </comp>
-    <comp lib="1" loc="(710,380)" name="OR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="6" loc="(362,492)" name="Text">
-      <a name="text" val="lw or sw"/>
     </comp>
     <comp lib="0" loc="(960,280)" name="Pin">
       <a name="facing" val="west"/>
@@ -4518,10 +4504,7 @@ be67 b067 e054 7000 c259 6c1 170a f600
     <comp lib="3" loc="(460,380)" name="Comparator">
       <a name="width" val="3"/>
     </comp>
-    <comp lib="3" loc="(460,450)" name="Comparator">
-      <a name="width" val="4"/>
-    </comp>
-    <comp lib="1" loc="(620,430)" name="AND Gate">
+    <comp lib="1" loc="(700,360)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(840,330)" name="NOT Gate">
@@ -4539,14 +4522,13 @@ be67 b067 e054 7000 c259 6c1 170a f600
     <comp lib="0" loc="(210,300)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
-      <a name="label" val="EX/MEM.RegTarget"/>
+      <a name="label" val="ID/EX.RegTarget"/>
     </comp>
     <comp lib="0" loc="(210,390)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
       <a name="label" val="IF/ID.RegTarget"/>
     </comp>
-    <comp lib="1" loc="(540,450)" name="NOT Gate"/>
     <comp lib="0" loc="(960,380)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
@@ -4555,16 +4537,7 @@ be67 b067 e054 7000 c259 6c1 170a f600
     </comp>
     <comp lib="0" loc="(210,260)" name="Pin">
       <a name="tristate" val="false"/>
-      <a name="label" val="EX/MEM.RegisterRead"/>
-    </comp>
-    <comp lib="0" loc="(210,440)" name="Pin">
-      <a name="width" val="4"/>
-      <a name="tristate" val="false"/>
-      <a name="label" val="OpCode"/>
-    </comp>
-    <comp lib="0" loc="(380,460)" name="Constant">
-      <a name="width" val="4"/>
-      <a name="value" val="0x6"/>
+      <a name="label" val="ID/EX.MemRead"/>
     </comp>
   </circuit>
 </project>
