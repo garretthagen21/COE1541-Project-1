@@ -13,10 +13,16 @@ addi $r7,7
 add $r1, $r2
 addi $r3, 10
 addui $r4, 20
-mult $r5, $r6
+mult $r5, $r4
+#0
+put $r0
+#3
 put $r1
+#13 - d
 put $r3
+#24 - 18
 put $r4
+#120 - 78
 put $r5
 
 # Stop

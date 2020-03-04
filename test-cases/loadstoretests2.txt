@@ -23,7 +23,7 @@ put $r5
 # Should be
 # 3
 # 8
-# 4
+# 3
 
 # Stop
 halt

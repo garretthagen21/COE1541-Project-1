@@ -8,8 +8,10 @@ addi $r5,5
 addi $r6,6
 addi $r7,7
 
+#r1 = 3 = 1 + 2
 add $r1,$r2
-bz $r3,10
+#break to 10 if r3 == 0
+bz $r3,12
 add $r1,$r2
 add $r3,$r4
 add $r1,$r2

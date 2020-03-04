@@ -13,10 +13,22 @@ addi $r7,7
 add $r1,$r2
 add $r3,$r1
 add $r5,$r2
+mult $r6, $r5
+addi $r7, 6
 
 
 # display out
+#3
+put $r1
+#6
 put $r3
+#7
+put $r5
+#42
+put $r6
+#13
+put $r7
+
 
 # Stop
 halt
