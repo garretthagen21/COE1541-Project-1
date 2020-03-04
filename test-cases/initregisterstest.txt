@@ -1,0 +1,21 @@
+# Init registers
+addi $r0,0
+addi $r1,1
+addi $r2,2
+addi $r3,3
+addi $r4,4
+addi $r5,5
+addi $r6,6
+addi $r7,7
+
+# Display
+put $r0
+put $r1
+put $r2
+put $r3
+put $r4
+put $r5
+put $r6
+put $r7
+
+
