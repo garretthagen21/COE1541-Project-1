@@ -8,15 +8,22 @@ addi $r5,5
 addi $r6,6
 addi $r7,7
 
-# Display
-put $r0
-put $r1
-put $r2
+
+# Test instructions
+sw $r3, $r4
+add $r1, $r7
+lw $r5, $r4
+
+
+# display out
 put $r3
-put $r4
+put $r1
 put $r5
-put $r6
-put $r7
+
+# Should be
+# 3
+# 8
+# 4
 
 # Stop
 halt
