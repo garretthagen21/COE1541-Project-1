@@ -1,0 +1,23 @@
+# Init registers
+addi $r0,0
+addi $r1,1
+addi $r2,2
+addi $r3,3
+addi $r4,4
+addi $r5,5
+addi $r6,6
+addi $r7,7
+
+
+# Test instructions
+add $r1, $r2
+addi $r3, 10
+addui $r4, 20
+mult $r5, $r6
+put $r1
+put $r3
+put $r4
+put $r5
+
+# Stop
+halt
