@@ -1,0 +1,7 @@
+add $r1,$r2
+add $r3,$r1
+add $r4,$r2
+mult $r5,$r4
+put $r3
+put $r5
+halt

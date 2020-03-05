@@ -1,0 +1,12 @@
+add $r1, $r2
+bz $r3,3
+add $r1,$r2
+add $r2,$r4
+bp $r1,6
+addi $r6,6
+addi $r6,7
+put $r2
+put $r1
+put $r3
+put $r6
+halt
